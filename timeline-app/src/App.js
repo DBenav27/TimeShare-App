@@ -48,7 +48,9 @@ class App extends Component {
             loginButtonClicked={ this.loginButtonClicked }
             logoutButtonClicked={ this.logoutButtonClicked } />
         <Header
-          currentUser={this.state.currentUser} />
+          currentUser={this.state.currentUser}
+        />
+
         {this.props.children}
       </div>
     );
