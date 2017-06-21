@@ -16,13 +16,20 @@ class TimelineContainer extends Component {
   componentDidMount(){
     this.fetchData()
   }
+
+
   fetchData(){
     LifeEventModel.all().then( (res) => {
       this.setState ({
-        lifeEvents: res.lifeEvents
+        lifeEvents: res.lifeEvents,
+        currentUser: auth.currentUser
+
       })
+      console.log(this.state.lifeEvents[7].uid)
     })
-  }
+}
+
+
   createLifeEvent(newLifeEvent) {
     LifeEventModel.create(newLifeEvent).then( (res) => {
       console.log('created life event', res)
@@ -54,8 +61,8 @@ class TimelineContainer extends Component {
       this.setState({updatedLifeEvents})
     })
   }
-
   render(){
+
     return (
       <div className='timelineContainer'>
         {
@@ -71,6 +78,7 @@ class TimelineContainer extends Component {
           onDeleteLifeEvent={this.deleteLifeEvent.bind(this)}
           onUpdateLifeEvent={this.updateLifeEvent.bind(this)}
         />
+
       </div>
     )
   }
