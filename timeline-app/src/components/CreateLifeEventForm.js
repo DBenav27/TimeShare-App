@@ -1,7 +1,8 @@
 // src/components/CreateTodoForm.js
 import React, {Component} from 'react';
 import { database } from '../utils/firebase';
-import { Button } from 'react-bootstrap';
+import {Modal, Button, Icon} from 'react-materialize'
+
 
 // inside src/components/CreateLifeEventForm.js
 class CreateLifeEventForm extends Component {
@@ -51,33 +52,41 @@ class CreateLifeEventForm extends Component {
         title: '',
         content: ''
       })
+
+
     }
 
     render() {
       return (
-        <section className="col-md-4 col-sm-12 add-quote">
-          <form onSubmit={ this.handleSubmit.bind(this) } className="form-add-lifeEvent">
-            <div className="row">
-              <input
-                onChange={ e => { this.setState({ title: e.target.value }) } }
-                value={ this.state.title }
-                className="form-control"
-                rows="3"
-                placeholder="Meaningful life event" />
-            </div>
-            <div className="row">
-              <textarea
-                onChange={ e => { this.setState({ content: e.target.value }) } }
-                value={ this.state.content }
-                className="form-control"
-                type="text"
-                placeholder="Description of life event"></textarea>
-            </div>
-            <div className="row">
-              <button className="btn btn-primary">Add Life Event</button>
-            </div>
-          </form>
-        </section>
+        <Modal
+	header='Create New Life Event'
+	trigger={
+		  <Button waves='light'>MODAL</Button>
+	}>
+
+              <form onSubmit={ this.handleSubmit.bind(this) } className="form-add-lifeEvent">
+                <div className="row">
+                  <input
+                    onChange={ e => { this.setState({ title: e.target.value }) } }
+                    value={ this.state.title }
+                    className="form-control"
+                    rows="3"
+                    placeholder="Meaningful life event" />
+                </div>
+                <div className="row">
+                  <textarea
+                    onChange={ e => { this.setState({ content: e.target.value }) } }
+                    value={ this.state.content }
+                    className="form-control"
+                    type="text"
+                    placeholder="Description of life event"></textarea>
+                </div>
+
+                  <button className="btn btn-primary">Add Life Event</button>
+
+              </form>
+
+        </Modal>
       );
     }
   }

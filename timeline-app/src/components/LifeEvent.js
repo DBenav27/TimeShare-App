@@ -3,6 +3,10 @@ import React, {Component} from 'react'
 import EditLifeEventForm from './EditLifeEventForm'
 
 class LifeEvent extends Component {
+
+
+
+
   render() {
     console.log(this.props)
     return (
