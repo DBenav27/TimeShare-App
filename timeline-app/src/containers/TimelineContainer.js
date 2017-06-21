@@ -6,7 +6,7 @@ import CreateLifeEventForm from '../components/CreateLifeEventForm'
 import EditLifeEventForm from '../components/EditLifeEventForm'
 import App from '../App'
 import { auth, firebase } from '../utils/firebase'
-
+import { Modal } from 'react-bootstrap';
 
 
 class TimelineContainer extends Component {
@@ -68,21 +68,25 @@ class TimelineContainer extends Component {
   }
 
   render(){
+
     console.log (this.state.lifeEvents)
+
     return (
-      <div className='timelineContainer'>
-        {
-          (this.state.currentUser != null) ?
-          <CreateLifeEventForm
-            createLifeEvent={this.createLifeEvent.bind(this)} /> :
-            <section className="col-md-4 col-sm-12 add-event">Log in to add a life event</section>
-        }
-          <Timeline
-            lifeEvents={this.state.lifeEvents}
-            onDeleteLifeEvent={this.deleteLifeEvent.bind(this)}
-            onUpdateLifeEvent={this.updateLifeEvent.bind(this)}
-             />
-      </div>
+        <div className='welcome'>
+          <div className='timelineContainer'>
+            {
+              (this.state.currentUser != null) ?
+              <CreateLifeEventForm
+                createLifeEvent={this.createLifeEvent.bind(this)} /> :
+                <section className="col-md-4 col-sm-12 add-event">Log in to add a life event</section>
+            }
+              <Timeline
+                lifeEvents={this.state.lifeEvents}
+                onDeleteLifeEvent={this.deleteLifeEvent.bind(this)}
+                onUpdateLifeEvent={this.updateLifeEvent.bind(this)}
+                 />
+          </div>
+        </div>
     )
   }
 }
