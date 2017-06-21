@@ -23,6 +23,7 @@ class TimelineContainer extends Component {
         lifeEvents: res.lifeEvents,
         currentUser: auth.currentUser
       })
+      console.log(this.state.lifeEvents[0])
     })
   }
   createLifeEvent(newLifeEvent) {
@@ -61,6 +62,8 @@ class TimelineContainer extends Component {
 
 
   render(){
+    console.log(this.state.lifeEvents[0])
+
     return (
       <div className='timelineContainer'>
         {
