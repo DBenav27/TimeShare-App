@@ -15,17 +15,20 @@ body {
 
 .timeline-wrapper {
   padding-top: 100px;
+  margin-left: 380px;
+
 }
 
 .card {
   background-color: white;
 
   margin-top: 10px;
-  margin-left: 380px;
+
   padding-left: 0;
   padding-right: 0;
-  box-shadow: 5px 5px 3px #888888;
+  /*box-shadow: 5px 5px 3px #888888;*/
   margin-bottom: 200px;
+    margin-left: 380px;
 
 }
 
@@ -44,6 +47,10 @@ body {
   text-align: center;
   width: 80%;
   margin: 0 auto;
+}
+
+.card-title {
+  margin: 0;
 }
 
 .card-text {
@@ -65,7 +72,6 @@ p {
 .glyphicon-time {
   font-size: 12px;
   color: #9da4a5;
-  /*margin-right: -175px;*/
   margin-top: 3px;
 }
 
@@ -73,4 +79,64 @@ p {
   /*margin-left: -115px;*/
   padding-left: -30px;
 }
+
+.imgdash {
+  width: 125px;
+  margin-left: 540px;
+  margin-top: -40px;
+}
 /*card area ends*/
+
+/*timeline.js*/
+
+.date {
+  margin-top: 214px;
+  display: inline-block;
+  position: fixed;
+  margin-left: -25px;
+}
+
+.timelinedate {
+  margin-left: 15px;
+  margin-top: -28px;
+}
+
+#arrow-line {
+  margin-left: -50px;
+  height: 100%;
+  margin-top: -50px;
+  display: inline-block;
+  position: fixed;
+}
+
+.timelinecirle {
+  margin-left: -30px;
+}
+/*create lifeevent form*/
+.add-event {
+  margin: 0 auto;
+  background: red;
+}
+
+/*editevent form*/
+.btn .btn-primary .updatebtn {
+  margin-left: 10px;
+  margin-top: -10px;
+  margin-bottom: 5px;
+  width: 70px;
+}
+
+
+
+.btn-success {
+  margin-left: -70px;
+}
+
+.btn-danger {
+  margin-left:70px;
+  margin-top: -52px;
+}
+
+.hideedit {
+  margin-bottom: 10px;
+}

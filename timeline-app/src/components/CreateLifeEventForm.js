@@ -51,8 +51,9 @@ class CreateLifeEventForm extends Component {
 
     render() {
       return (
-        <section className="col-md-4 col-sm-12 add-quote">
+        <section className="col-md-4 col-sm-12 add-event">
           <form onSubmit={ e => this.onFormSubmit(e) } className="form-add-lifeEvent">
+            <h4>Add Life Event</h4>
             <div className="row">
               <input
                 onChange={ e => { this.setState({ eventDate: e.target.value }) } }

@@ -74,10 +74,9 @@ class TimelineContainer extends Component {
       <div className='timelineContainer'>
         {
           (this.state.currentUser != null) ?
-          <div>
-            <CreateLifeEventForm
-              currentUser= {this.state.currentUser}
-              onCreateLifeEvent={this.createLifeEvent.bind(this)} />
+          <div className="noname">
+
+
             <Timeline
               currentUser= {this.state.currentUser}
               lifeEvents={this.state.lifeEvents}

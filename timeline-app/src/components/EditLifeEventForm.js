@@ -44,14 +44,14 @@ class EditLifeEventForm extends Component {
             onChange={event => this.onTitleChange(event)}
             placeholder='Update Title...'
             type='text'
-            value={this.state.title} /> {'  '}
+            value={this.state.title} /><br />
           <textarea
             onChange={event => this.onContentChange(event)}
             placeholder='Update Content...'
             type='text'
             value={this.state.content} />{'  '}
             <br />
-          <button className="btn btn-primary" type='submit'>Update!</button>
+          <button className="btn btn-success btn-sm" type='submit'>Update</button>
         </form>
       </div>
     )
