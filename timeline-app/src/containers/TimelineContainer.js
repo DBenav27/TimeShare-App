@@ -64,7 +64,6 @@ class TimelineContainer extends Component {
             item.userRating = updatedLifeEvent.userRating;
         }
       })
-      //console.log(updatedLifeEvents);
       this.setState({updatedLifeEvents})
     })
   }

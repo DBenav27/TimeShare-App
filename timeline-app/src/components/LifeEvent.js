@@ -1,10 +1,14 @@
 // src/components/Todo.js
 import React, {Component} from 'react'
 import EditLifeEventForm from './EditLifeEventForm'
+import {auth} from '../utils/firebase'
 
 class LifeEvent extends Component {
   render() {
     return (
+      <div>
+      {
+      (this.props.uid === auth.currentUser.uid) ?
       <div className="row lifeEvent">
         <div className="col-md-11 col-sm-11 lifeEvent-text">
           <blockquote>
@@ -33,7 +37,11 @@ class LifeEvent extends Component {
           </blockquote>
         </div>
       </div>
-    );
+      :
+    <div></div>
+  }
+  </div>
+  );
   }
 }
 
