@@ -25,7 +25,7 @@ class CreateLifeEventForm extends Component {
     e.preventDefault()
 
 
-    
+
 
     let newLifeEvent = {
       eventDate: this.state.eventDate,
@@ -120,7 +120,7 @@ class CreateLifeEventForm extends Component {
               </div>
 
             <div className="row">
-              <button className="btn btn-primary">Add Life Event</button>
+              <button onClick={ this.props.close} className="btn btn-primary">Add Life Event</button>
             </div>
           </form>
         </section>

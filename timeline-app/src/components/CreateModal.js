@@ -58,7 +58,8 @@ const CreateModal = React.createClass({
             <CreateLifeEventForm
               currentUser= {this.state.currentUser}
               onCreateLifeEvent={this.createLifeEvent.bind(this)}
-              
+              close = {this.close}
+
             />
 
           </Modal.Body>
