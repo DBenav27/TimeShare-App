@@ -38,9 +38,7 @@ const CreateModal = React.createClass({
     );
 
     return (
-      <div>
-        <p>Click to get the full Modal experience!</p>
-
+      <div className="modalarea">
         <Button
           bsStyle="primary"
           bsSize="large"
@@ -53,7 +51,7 @@ const CreateModal = React.createClass({
           <Modal.Header closeButton>
             <Modal.Title>Create Life Event</Modal.Title>
           </Modal.Header>
-          <Modal.Body className="modalbody">
+          <Modal.Body>
 
             <CreateLifeEventForm
               currentUser= {this.state.currentUser}

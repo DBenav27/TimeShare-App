@@ -51,6 +51,7 @@ body {
 
 .card-title {
   margin: 0;
+  margin-bottom: 18px;
 }
 
 .card-text {
@@ -118,6 +119,12 @@ p {
   /*background: red;*/
 }
 
+.h5 {
+  font-size: 20px;
+  margin-right: -920px;
+  margin-top: -66px;
+}
+
 /*editevent form*/
 .btn .btn-primary .updatebtn {
   margin-left: 10px;
@@ -155,4 +162,10 @@ p {
 
 .form-control {
   width: 542px;
+}
+
+.modalarea {
+  padding-top: 450px;
+  padding-left: 20px;
+  position: fixed;
 }

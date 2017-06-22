@@ -8,10 +8,10 @@ class LifeEvent extends Component {
       <div className="lifeEvent card col-md-6">
         <img className="card-img-top center-block img-frame" src={ this.props.data.photo }></img>
         <img className="imgdash" src="images/dashline.png"></img>
-          <span className="glyphicon glyphicon-plus-sign pull-right"></span>
+
           <div className="card-block">
             <h2 className="card-title">{ this.props.data.title }</h2>
-            <span className="pull-left" >06/22/2013</span><span className="pull-right">rating: { this.props.data.userRating }</span><br />
+            <h5 className="" >{ this.props.data.eventDate }</h5><span className="pull-center">rating: { this.props.data.userRating }</span><br />
               <p className="content">{ this.props.data.content }</p>
 
               <span className="cardfooter postdate pull-left">Posted on { this.props.data.postDate }</span>

@@ -26,7 +26,7 @@ class Timeline extends Component {
     <div className="row">
       <img id="arrow-line" src="images/line.png" />
       <div className="col-md-1 date" id="date">
-        <h4 className="timelinedate">01/01/2017</h4>
+        
       </div>
 
     </div>
