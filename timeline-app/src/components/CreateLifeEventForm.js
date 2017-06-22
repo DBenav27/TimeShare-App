@@ -52,14 +52,16 @@ class CreateLifeEventForm extends Component {
     render() {
       return (
         <section className="col-md-4 col-sm-12 add-quote">
-          <form onSubmit={ e => this.onFormSubmit(e) } className="form-add-lifeEvent">
+          <form onSubmit={ e => this.onFormSubmit(e) } className="form-add-lifeEvent" id="eventForm">
             <div className="row">
               <input
                 onChange={ e => { this.setState({ eventDate: e.target.value }) } }
                 value={ this.state.eventDate }
                 className="form-control"
                 rows="3"
-                placeholder="When did this happen?" />
+                placeholder="When did this happen?"
+                maxLength="20"
+                required/>
             </div>
 
             <div className="row">
@@ -68,7 +70,9 @@ class CreateLifeEventForm extends Component {
                 value={ this.state.title }
                 className="form-control"
                 rows="3"
-                placeholder="Title" />
+                placeholder="Title"
+                maxLength="40"
+                required/>
             </div>
 
             <div className="row">
@@ -77,7 +81,9 @@ class CreateLifeEventForm extends Component {
                 value={ this.state.content }
                 className="form-control"
                 rows="3"
-                placeholder="What happened..." />
+                placeholder="What happened..."
+                maxLength="500"
+                required/>
             </div>
 
             <div className="row">
@@ -86,7 +92,8 @@ class CreateLifeEventForm extends Component {
                 value={ this.state.tags }
                 className="form-control"
                 rows="3"
-                placeholder="Add some tags..." />
+                placeholder="Add some tags..."
+                maxLength="50" />
             </div>
 
             <div className="row">
@@ -95,7 +102,8 @@ class CreateLifeEventForm extends Component {
                 value={ this.state.photo }
                 className="form-control"
                 rows="3"
-                placeholder="Upload a photo" />
+                placeholder="Upload a photo"
+                maxLength="150"/>
             </div>
 
             <div className="row">
@@ -104,7 +112,11 @@ class CreateLifeEventForm extends Component {
                 value={ this.state.userRating }
                 className="form-control"
                 rows="3"
-                placeholder="Rate this event from your life on a scale from 1-10" />
+                placeholder="Rate this event from your life on a scale from 1-10"
+                type="number"
+                min="1"
+                max="10"
+                required/>
             </div>
 
             <div className="row">
