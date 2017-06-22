@@ -5,31 +5,23 @@ import EditLifeEventForm from './EditLifeEventForm'
 class LifeEvent extends Component {
   render() {
     return (
-      <div className="row lifeEvent">
-        <div className="col-md-11 col-sm-11 lifeEvent-text">
-          <blockquote>
-            <p className="lifeEvent-content"> EVENT DATE: <br /> { this.props.data.eventDate }</p>
-            <p className="lifeEvent-content"> POST DATE: <br /> { this.props.data.postDate }</p>
-            <p className="lifeEvent-title"> TITLE: <br /> { this.props.data.title }</p>
-            <p className="lifeEvent-content"> PUBLIC?: <br /> { this.props.data.isPublic }</p>
-            <p className="lifeEvent-content"> CONTENT: <br /> { this.props.data.content }</p>
-            <p className="lifeEvent-content"> TAGS: <br /> { this.props.data.tags }</p>
-            <p className="lifeEvent-content"> PHOTO: <br /> { this.props.data.photo }</p>
-            <p className="lifeEvent-content"> USER RATING: <br /> { this.props.data.userRating }</p>
+      <div className="lifeEvent card col-md-6">
+        <img className="card-img-top center-block img-frame" src={ this.props.data.photo }></img>
+          <span className="glyphicon glyphicon-plus-sign pull-right"></span>
+          <div className="card-block">
+            <h2 className="card-title">{ this.props.data.title }</h2>
+            <span className="pull-left" >06/22/2013</span><span className="pull-right">rating: { this.props.data.userRating }</span><br />
+              <p className="content">{ this.props.data.content }</p>
 
-            <EditLifeEventForm
-                lifeEvent={this.props.data}
-                onUpdateLifeEvent={this.props.onUpdateLifeEvent}
-            />
-
-            <button
+              <span className="cardfooter postdate pull-left">Posted on { this.props.data.postDate }</span>
+              <span className="cardfooter pull-right ">Tag: { this.props.data.tags } </span><br/><hr/>
+              <button
                 className='btn btn-danger'
                 onClick={() => this.props.onDeleteLifeEvent(this.props.data)}>
                 Delete!
-            </button>
-          </blockquote>
+              </button>
+          </div>
         </div>
-      </div>
     );
   }
 }
