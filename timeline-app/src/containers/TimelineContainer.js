@@ -4,6 +4,8 @@ import LifeEventModel from '../models/LifeEvent'
 import Timeline from '../components/Timeline'
 import CreateLifeEventForm from '../components/CreateLifeEventForm'
 import { auth } from '../utils/firebase'
+import { Modal } from 'react-bootstrap';
+import CreateModal from '../components/CreateModal'
 
 class TimelineContainer extends Component {
   constructor(props){
@@ -86,6 +88,7 @@ class TimelineContainer extends Component {
           </div> :
           <section className="col-md-4 col-sm-12 add-event">Log in to add a life event</section>
         }
+        <CreateModal />
       </div>
     )
   }

@@ -23,6 +23,10 @@ class CreateLifeEventForm extends Component {
 
     onFormSubmit(e){
     e.preventDefault()
+
+
+    
+
     let newLifeEvent = {
       eventDate: this.state.eventDate,
       postDate: this.state.postDate,
@@ -32,7 +36,7 @@ class CreateLifeEventForm extends Component {
       tags: this.state.tags,
       photo: this.state.photo,
       userRating: this.state.userRating,
-      uid: this.props.currentUser.uid
+      uid: this.props.uid
     }
     this.props.onCreateLifeEvent(newLifeEvent)
 
@@ -53,7 +57,7 @@ class CreateLifeEventForm extends Component {
       return (
         <section className="col-md-4 col-sm-12 add-event">
           <form onSubmit={ e => this.onFormSubmit(e) } className="form-add-lifeEvent">
-            <h4>Add Life Event</h4>
+
             <div className="row">
               <input
                 onChange={ e => { this.setState({ eventDate: e.target.value }) } }

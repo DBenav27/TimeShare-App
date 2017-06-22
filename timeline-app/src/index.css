@@ -115,7 +115,7 @@ p {
 /*create lifeevent form*/
 .add-event {
   margin: 0 auto;
-  background: red;
+  /*background: red;*/
 }
 
 /*editevent form*/
@@ -139,4 +139,20 @@ p {
 
 .hideedit {
   margin-bottom: 10px;
+}
+
+/*create event*/
+
+.modal-content {
+  max-width: 768px;
+  min-height: 417px;
+
+}
+
+.modal-body {
+  height: 290px;
+}
+
+.form-control {
+  width: 542px;
 }
