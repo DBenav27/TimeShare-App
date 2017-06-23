@@ -18,7 +18,7 @@ class Header extends Component{
         {
           this.props.currentUser !=null ?
           <h2>
-            Hello {this.props.currentUser.displayName} Welcome to TimeShare
+            Hello {this.props.currentUser.displayName} 
           </h2> :
           <h4>Interested in using TimeShare? Login/Signup using our form at the top of the page!</h4>
         }
