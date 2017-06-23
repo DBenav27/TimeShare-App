@@ -1,0 +1,81 @@
+<!DOCTYPE htmL>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <link rel="stylesheet" href="main.css" />
+
+  <title>Form</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav pull-left">
+          <li><a href="index.html">"Form"</a></li>
+      </div>
+      <div>
+        <ul class="nav navbar-nav pull-right">
+          <li> <a href="/auth/facebook">Login with Facebook</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <!-- insert a picture here -->
+        <img id="insert" src="http://i3.cpcache.com/product/1188656826/insert_chocolate_here_square_sticker_3_x_3.jpg?width=225&height=225&Filters=%5B%7B%22name%22%3A%22background%22%2C%22value%22%3A%22F2F2F2%22%2C%22sequence%22%3A2%7D%5D">
+
+        <!--upload bar  -->
+        <form class="form-wrapper" method="GET" action="/">
+          <input type="submit" class="uploadbutton" value="Upload">
+          <a href=""></a>
+        </form>
+      </div>
+
+      <!-- Title -->
+      <div class="col-lg-6">
+        <h3 class="title">Title</h3>
+        <form class="form-wrappertitle" method="GET" action="/">
+          <!-- text area  -->
+          <input type="text" class="titlesearch" placeholder="" required>
+          <input type="submit" class="title" value="Upload">
+          <a href=""></a>
+        </form>
+
+        <!-- Date -->
+        <h3 class="date">Date</h3>
+        <form class="form-wrapper2" method="GET" action="/">
+          <!-- text area  -->
+          <input type="text" class="datesearch" placeholder="" required>
+          <!-- button -->
+          <input type="submit" class="date" value="Upload">
+          <a href=""></a>
+        </form>
+
+        <!-- Description -->
+        <h4 class="description">Description</h4>
+        <form class="form-wrapper3" method="GET" action="/toSearch">
+          <!-- text area -->
+          <textarea rows="4" cols="50">lorem ipsum</textarea>
+          <!-- button -->
+          <input type="submit" class="description" value="Upload">
+          <a href=""></a>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
