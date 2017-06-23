@@ -58,10 +58,10 @@ class CreateLifeEventForm extends Component {
     tags: this.state.tags,
     photo: this.state.photo,
     userRating: this.state.userRating,
-    uid: this.props.uid
+    uid: this.props.currentUser.uid
   }
 
-  this.props.onCreateLifeEvent(newLifeEvent)
+  this.props.createLifeEvent(newLifeEvent)
 
   this.setState({
     eventDate: '',
