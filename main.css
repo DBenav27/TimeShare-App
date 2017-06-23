@@ -127,9 +127,11 @@ h3.statement{
 }
 /*about statement*/
 p.stuff{
-  font-family: Genath-Regular, serif;
-  font-size: 23px;
-  font-weight: 100;
+  margin-top: 75px;
+font-family: Genath-Regular, serif;
+font-size: 23px;
+font-weight: 100;
+margin-left: 17px
 
 }
 
