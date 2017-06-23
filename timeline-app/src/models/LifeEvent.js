@@ -18,9 +18,9 @@ class LifeEventModel {
     return request
   }
 
-  static delete(lifeEvent){
+  static delete(id){
     let request = $.ajax({
-      url: "https://timeline--app.herokuapp.com/lifeevents/" + lifeEvent._id,
+      url: "https://timeline--app.herokuapp.com/lifeevents/" + id,
       method: 'DELETE'
     })
     return request

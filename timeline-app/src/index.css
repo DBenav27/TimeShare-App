@@ -173,7 +173,18 @@ p {
     position: fixed;
 }
 
-
 input {
   width: 90%;
+}
+
+.btn-primary {
+  border-radius: 3px;
+}
+
+.btn-update {
+  margin-left: -60px;
+}
+
+.btn-edit {
+  margin-top: -10px;
 }

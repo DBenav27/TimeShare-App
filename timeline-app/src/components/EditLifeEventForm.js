@@ -40,7 +40,7 @@ class EditLifeEventForm extends Component {
       userRating: this.state.userRating || this.props.lifeEvent.userRating,
     }
     this.props.onUpdateLifeEvent(updatedLifeEvent, this.props.lifeEvent._id)
-    
+
 
     this.setState({
       eventDate: '',
@@ -54,6 +54,12 @@ class EditLifeEventForm extends Component {
       uid: ''
     })
   }
+
+  // onFormDelete(e){
+  //   e.preventDefault()
+  // }
+  // this.props.onDeleteLifeEvent(deleteLifeEvent, his.props.lifeEvent._id)
+
   render(){
     let dataTarget = "#collapseItem-" + this.props.id
     let targetId = "collapseItem-" + this.props.id
@@ -61,7 +67,7 @@ class EditLifeEventForm extends Component {
 
       <div>
 
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target={dataTarget} aria-expanded="false" aria-controls="collapseExample">
+        <button type="button" className="btn btn-secondary" data-toggle="collapse" data-target={dataTarget}>
           EDIT
         </button>
 
@@ -133,18 +139,22 @@ class EditLifeEventForm extends Component {
                         </div>
 
                       <div className="row">
-                        <button className="btn btn-primary">Update</button>
+                        <button className="btn btn-primary btn-update btn-sm">Update</button>
                       </div>
+                    </form>
+                    <form onSubmit={ e => this.onDeleteSubmit(e) } className="form-delete-lifeEvent">
+
+                      <button
+                        className='btn btn-danger btn-sm'
+                        onClick={(e) => this.props.onDeleteLifeEvent(this.props.data._id)}>
+                        Delete!
+                      </button>
+
                     </form>
                   </div>
 
 
               </div>
-              <button
-                className='btn btn-danger btn-sm'
-                onClick={() => this.props.onDeleteLifeEvent(this.props.data)}>
-                Delete
-              </button>
             </div>
           </div>
     )
