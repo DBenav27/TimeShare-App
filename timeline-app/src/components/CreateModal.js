@@ -31,11 +31,7 @@ const CreateModal = React.createClass({
 
   render() {
 
-    const tooltip = (
-      <Tooltip id="modal-tooltip">
-        wow.
-      </Tooltip>
-    );
+    
 
     return (
       <div className="modalarea">
