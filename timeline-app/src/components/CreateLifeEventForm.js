@@ -55,7 +55,7 @@ class CreateLifeEventForm extends Component {
 
     render() {
       return (
-        <section className="col-md-4 col-sm-12 add-event">
+        <section className=" col-sm-12 add-event">
           <form onSubmit={ e => this.onFormSubmit(e) } className="form-add-lifeEvent">
 
             <div className="row">

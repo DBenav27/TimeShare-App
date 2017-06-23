@@ -15,7 +15,7 @@ body {
 
 .timeline-wrapper {
   padding-top: 100px;
-  margin-left: 380px;
+  margin-left: 280px;
 
 }
 
@@ -28,20 +28,16 @@ body {
   padding-right: 0;
   /*box-shadow: 5px 5px 3px #888888;*/
   margin-bottom: 200px;
-    margin-left: 380px;
+    margin-left: 320px;
 
 }
 
 .card-img-top {
   width: 100%;
+
 }
 
-.glyphicon-plus-sign {
-  font-size: 40px;
-  margin-right: 15px;
-  margin-top: -20px;
-  color: orange;
-}
+
 
 .card-block {
   text-align: center;
@@ -70,31 +66,18 @@ p {
   color: #9da4a5;
 }
 
-.glyphicon-time {
-  font-size: 12px;
-  color: #9da4a5;
-  margin-top: 3px;
-}
-
-.postdate {
-  /*margin-left: -115px;*/
-  padding-left: -30px;
-}
 
 .imgdash {
-  width: 125px;
-  margin-left: 540px;
-  margin-top: -40px;
+  /*width: 125px;
+  margin-left: 540px;*/
+  margin-top: 60px;
 }
 /*card area ends*/
 
 /*timeline.js*/
 
-.date {
-  margin-top: 214px;
-  display: inline-block;
-  position: fixed;
-  margin-left: -25px;
+.lifeEvent {
+  box-shadow: 5px 5px 5px #888888;
 }
 
 .timelinedate {
@@ -161,11 +144,36 @@ p {
 }
 
 .form-control {
-  width: 542px;
+  width: 100%;
+  margin-top: 5px;
 }
 
 .modalarea {
   padding-top: 450px;
   padding-left: 20px;
   position: fixed;
+}
+
+.theline {
+  margin-right: -260px;
+  margin-top: -500px;
+}
+
+.img-dash {
+  margin-top: 60px;
+}
+
+#arrow-line {
+    margin-left: 132px;
+    height: 100%;
+    /* width: 100%; */
+    /* width: 40px; */
+    margin-top: -50px;
+    display: inline-block;
+    position: fixed;
+}
+
+
+input {
+  width: 90%;
 }

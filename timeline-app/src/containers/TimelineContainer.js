@@ -73,7 +73,7 @@ class TimelineContainer extends Component {
   render(){
     console.log(this.state.lifeEvents);
     return (
-      <div className='timelineContainer'>
+      <div className='timelineContainer container'>
         {
           (this.state.currentUser != null) ?
           <div className="noname">
