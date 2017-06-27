@@ -3,7 +3,7 @@ import firebase from 'firebase';
 // Provided by the Firebase console
 var config = {
     apiKey: "AIzaSyAfShnGnN2aSE0BcP2V0hD8x4PCX-H3QM8",
-    authDomain: "project-02-8b8aa.firebaseapp.com",
+    authDomain: "https://afternoon-dusk-96387.herokuapp.com/",
     databaseURL: "https://project-02-8b8aa.firebaseio.com",
     projectId: "project-02-8b8aa",
     storageBucket: "project-02-8b8aa.appspot.com",
