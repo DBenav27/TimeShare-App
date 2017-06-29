@@ -1,4 +1,4 @@
-import React, {Component}  from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import {Button, Modal, Body, OverlayTrigger, Popover, Tooltip, mountNode} from 'react-bootstrap';
 import CreateLifeEventForm from '../components/CreateLifeEventForm'
