@@ -1,5 +1,8 @@
-import {Button, Modal} from 'react-bootstrap';
+import React, {Component}  from 'react';
+import ReactDOM from 'react-dom';
+import {Button, Modal, Body, OverlayTrigger, Popover, Tooltip, mountNode} from 'react-bootstrap';
 import CreateLifeEventForm from '../components/CreateLifeEventForm'
+import LifeEventModel from '../models/LifeEvent'
 
 
 const CreateModal = React.createClass({
