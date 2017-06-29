@@ -20,7 +20,7 @@
 
 ## Technologies Used
 
-*HTML, CSS, Bootstrap, Javascript, JQuery, Express, MongoDB, ReactJS, Git, Github, Heroku, Firebase Auth, node.js *
+*HTML, CSS, Bootstrap, Javascript, JQuery, Express, MongoDB, ReactJS, Git, Github, Heroku, Firebase Auth, node.js*
 
 
 ## Existing Features / User Stories
