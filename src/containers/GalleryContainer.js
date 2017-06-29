@@ -18,14 +18,12 @@ class GalleryContainer extends Component {
     //this is dumb
     this.fetchData()
     this.fetchData()
-    console.log("Life Events: ", this.lifeEvents);
   }
 
 
   fetchData(){
     LifeEventModel.allGallery().then( (res) => {
       GAL_EVENTS = res.lifeEvents
-      console.log(GAL_EVENTS);
       this.setState ({
         lifeEvents: res.lifeEvents,
         currentUser: auth.currentUser

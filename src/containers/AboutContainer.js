@@ -29,18 +29,18 @@ class AboutContainer extends Component {
               <ul className="lang">HTML</ul>
               <ul className="lang">CSS</ul>
               <ul className="lang">Javascript</ul>
+              <ul className="lang">ReactJS</ul>
+              <ul className="lang">MongoDB</ul>
+              <ul className="lang">Firebase Auth</ul>
               <ul className="lang">Jquery</ul>
-              <ul className="lang">React</ul>
-              <ul className="lang">Bootstrap</ul>
-              <ul className="lang">Materialze</ul>
             </div>
           </section>
 
           <div className="us">
             <div className="row">
               <div className="circle">
-
                 <p className="team">Team</p>
+
                   <div className="col-lg-3">
                     <div className="hover">
                       <img className="img-circle" img src="images/kenny.jpg" alt="Avatar"/>
@@ -49,7 +49,6 @@ class AboutContainer extends Component {
                       </div>
                     </div>
                   </div>
-
 
                   <div className="col-lg-3">
                     <div className="hover">
@@ -60,23 +59,23 @@ class AboutContainer extends Component {
                     </div>
                   </div>
 
-                <div className="col-lg-3">
-                  <div className="hover">
-                    <img className="img-circle" img src="images/viv.jpg" alt="Avatar"/>
-                    <div className="overlay">
-                      <div className="kenny">Vivienne<br/> White<br/>Front-End</div>
+                  <div className="col-lg-3">
+                    <div className="hover">
+                      <img className="img-circle" img src="images/viv.jpg" alt="Avatar"/>
+                      <div className="overlay">
+                        <div className="kenny">Vivienne<br/> White<br/>Front-End</div>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div className="col-lg-3">
-                  <div className="hover">
-                    <img className="img-circle" img src="images/dj.jpg" alt="Avatar"/>
-                    <div className="overlay">
-                      <div className="kenny">DJ<br/>Benavidez<br/>Front-End</div>
+                  <div className="col-lg-3">
+                    <div className="hover">
+                      <img className="img-circle" img src="images/dj.jpg" alt="Avatar"/>
+                      <div className="overlay">
+                        <div className="kenny">DJ<br/>Benavidez<br/>Front-End</div>
+                      </div>
                     </div>
                   </div>
-                </div>
 
               </div>
             </div>
@@ -94,6 +93,7 @@ class AboutContainer extends Component {
               <h3 className="db">"Hello, this is Dane" - Dane</h3>
             </div>
           </section>
+
           <section>
             <div className="move">
               <h3 className="headquarters">Headquarters</h3>
@@ -106,6 +106,7 @@ class AboutContainer extends Component {
               </div>
             </div>
           </section>
+
         </div>
     );
   }

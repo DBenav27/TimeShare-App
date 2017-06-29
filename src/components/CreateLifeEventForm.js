@@ -46,7 +46,6 @@ class CreateLifeEventForm extends Component {
   e.preventDefault()
   for (const checkbox of this.selectedCheckboxes) {
     (checkbox) ? this.state.isPublic = true : this.state.isPublic = false
-    console.log(checkbox, 'is selected.');
   }
 
   let newLifeEvent = {

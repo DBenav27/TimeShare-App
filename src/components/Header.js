@@ -3,7 +3,6 @@ import React, {Component} from 'react'
 import { auth } from '../utils/firebase'
 import './Header.css';
 
-
 class Header extends Component{
   constructor(props){
     super(props)
@@ -20,11 +19,11 @@ class Header extends Component{
           <div>
             <h3 className="events">TimeShare: Share your events and moments to the world!</h3>
           </div> :
+
           <div className="title">
             <h4 className="events">Interested in using TimeShare? Login/Signup using our form at the top of the page!</h4>
           </div>
         }
-
       </div>
     )
   }

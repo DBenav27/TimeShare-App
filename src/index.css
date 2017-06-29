@@ -5,33 +5,25 @@ body {
   background: #f5f5f5;
 }
 
-/*card area*/
 
+/*card area*/
 .timeline-wrapper {
   padding-top: 100px;
   margin-left: 280px;
-
 }
 
 .card {
   background-color: white;
-
   margin-top: 10px;
-
   padding-left: 0;
   padding-right: 0;
-  /*box-shadow: 5px 5px 3px #888888;*/
   margin-bottom: 200px;
-    /*margin-left: 320px;*/
-
 }
 
 .card-img-top {
   width: 100%;
 
 }
-
-
 
 .card-block {
   text-align: center;
@@ -60,16 +52,12 @@ p {
   color: #9da4a5;
 }
 
-
 .imgdash {
-  /*width: 125px;
-  margin-left: 540px;*/
   margin-top: 60px;
 }
-/*card area ends*/
+
 
 /*timeline.js*/
-
 .lifeEvent {
   box-shadow: 5px 5px 5px #888888;
   width: 70%;
@@ -80,27 +68,22 @@ p {
   margin-top: -28px;
 }
 
-.real-line {
-  /*margin-left: 400px;*/
-}
-
-
 #arrow-line {
-    margin-left: -27px;
+  margin-left: -27px;
   height: 100%;
   margin-top: -50px;
   display: inline-block;
   position: fixed;
 }
 
-
 .timelinecirle {
   margin-left: -30px;
 }
+
+
 /*create lifeevent form*/
 .add-event {
   margin: 0 auto;
-  /*background: red;*/
 }
 
 .h5 {
@@ -109,6 +92,7 @@ p {
   margin-top: -66px;
 }
 
+
 /*editevent form*/
 .btn .btn-primary .updatebtn {
   margin-left: 10px;
@@ -116,8 +100,6 @@ p {
   margin-bottom: 5px;
   width: 70px;
 }
-
-
 
 .btn-success {
   margin-left: -70px;
@@ -132,12 +114,11 @@ p {
   margin-bottom: 10px;
 }
 
-/*create event*/
 
+/*create event*/
 .modal-content {
   max-width: 768px;
   min-height: 417px;
-
 }
 
 .modal-body {
@@ -165,13 +146,11 @@ p {
 }
 
 #arrow-line {
-        margin-left: 232px;
-    height: 100%;
-    /* width: 100%; */
-    /* width: 40px; */
-    margin-top: -50px;
-    display: inline-block;
-    position: fixed;
+  margin-left: 232px;
+  height: 100%;
+  margin-top: -50px;
+  display: inline-block;
+  position: fixed;
 }
 
 input {

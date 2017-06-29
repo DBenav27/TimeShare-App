@@ -33,14 +33,12 @@ class TimelineContainer extends Component {
   }
   createLifeEvent(newLifeEvent) {
     LifeEventModel.create(newLifeEvent).then( (res) => {
-      console.log('created life event', res)
       let lifeEvents = this.state.lifeEvents
       let newTimeline = lifeEvents.push(res)
       this.setState({newTimeline})
     })
   }
   deleteLifeEvent(lifeEvent) {
-    console.log('deleting lifeEvent', lifeEvent)
     LifeEventModel.delete(lifeEvent).then( (res) => {
         let lifeEvents = this.state.lifeEvents.filter(function(lifeEvent) {
           return lifeEvent._id !== res._id
@@ -72,7 +70,6 @@ class TimelineContainer extends Component {
   }
 
   render(){
-      console.log(this.state.lifeEvents);
       return (
         <div className='timelineContainer container'>
           {
