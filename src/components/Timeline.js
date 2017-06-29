@@ -23,7 +23,7 @@ class Timeline extends Component {
 
           </div>
           <div className=" real-line">
-            <img id="arrow-line" src="images/line.png" />
+            <img id="arrow-line" src="images/line.png" alt="line" />
           </div>
         </div>
     );

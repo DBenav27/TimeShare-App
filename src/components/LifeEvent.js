@@ -12,7 +12,7 @@ class LifeEvent extends Component {
         (this.props.uid === auth.currentUser.uid) ?
           <div className="row">
             <div className="lifeEvent card pull-center">
-              <img className="card-img-top center-block img-frame" src={ this.props.data.photo }></img>
+              <img className="card-img-top center-block img-frame" src={ this.props.data.photo } alt="event photo"></img>
               <button className='btn btn-danger'
                 onClick={() => this.props.onDeleteLifeEvent(this.props.data)}>
                 X
@@ -39,7 +39,7 @@ class LifeEvent extends Component {
             </div>
 
             <div className="col-sm-2 pull-left theline">
-              <img className="img-dash" src="images/dashline.png"></img>
+              <img className="img-dash" src="images/dashline.png" alt="line"></img>
             </div>
           </div> :
         <div></div>

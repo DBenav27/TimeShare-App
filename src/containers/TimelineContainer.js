@@ -2,9 +2,7 @@
 import React, {Component} from 'react'
 import LifeEventModel from '../models/LifeEvent'
 import Timeline from '../components/Timeline'
-import CreateLifeEventForm from '../components/CreateLifeEventForm'
 import { auth } from '../utils/firebase'
-import { Modal } from 'react-bootstrap';
 import CreateModal from '../components/CreateModal'
 
 class TimelineContainer extends Component {
