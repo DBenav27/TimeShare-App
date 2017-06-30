@@ -29,7 +29,7 @@ class App extends Component {
     // set up provider
     const provider = new firebase.auth.GoogleAuthProvider();
     // tell Firebase auth to log in with a popup and that provider
-    auth.signInWithPopup(provider);
+    auth.signInWithCredential(provider);
   }
 
   logoutButtonClicked(e) {
