@@ -15,7 +15,6 @@ class GalleryContainer extends Component {
   }
 
   componentDidMount(){
-    //this is dumb
     this.fetchData()
     this.fetchData()
     console.log("Life Events: ", this.lifeEvents);
